@@ -1,16 +1,12 @@
 import React from "react";
-import { categories } from "../data/data.js";
-import EmojiFoodBeverageOutlinedIcon from "@mui/icons-material/EmojiFoodBeverageOutlined";
-import DinnerDiningOutlinedIcon from "@mui/icons-material/DinnerDiningOutlined";
-import LunchDiningOutlinedIcon from "@mui/icons-material/LunchDiningOutlined";
-import RestaurantOutlinedIcon from "@mui/icons-material/RestaurantOutlined";
-import { orange, yellow } from "@mui/material/colors";
+
+import { yellow } from "@mui/material/colors";
 import StarIcon from "@mui/icons-material/Star";
 
 const Category = () => {
   return (
     <div className="max-w-[1640px] m-auto px-4 py-12 ">
-      {/* Categories */}
+      <h1 className="font-bold text-3xl text-center">Our Customers Say's</h1>
       <div className="flex justify-around mt-10  flex-col lg:flex-row bg-orange-50 py-10 px-5">
         <div className="flex flex-col justify-center items-center">
           <img

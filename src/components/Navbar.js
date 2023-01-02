@@ -15,21 +15,15 @@ const Navbar = () => {
 
   return (
     <div className="max-w-[1640px] mx-auto flex justify-between items-center p-4">
-      {/* Left side */}
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <AiOutlineMenu size={30} />
         </div>
         <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2 ml-3">
-          Tasty <span className="font-bold">Food</span>
+          <strong>S</strong>TATION
         </h1>
-        {/* <div className="hidden lg:flex items-center bg-gray-200 rounded-full p-1 text-[14px]">
-          <p className="bg-black text-white rounded-full p-2">Delivery</p>
-          <p className="p-2">Pickup</p>
-        </div> */}
       </div>
 
-      {/* Search Input */}
       <div className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] sm:w-[400px] lg:w-[500px]">
         <AiOutlineSearch size={25} />
         <input
@@ -38,20 +32,16 @@ const Navbar = () => {
           placeholder="Search foods"
         />
       </div>
-      {/* Cart button */}
       <button className="bg-black text-white hidden md:flex items-center py-2 rounded-full">
         <BsFillCartFill size={20} className="mr-2" /> Cart
       </button>
 
-      {/* Mobile Menu */}
-      {/* Overlay */}
       {nav ? (
         <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
       ) : (
         ""
       )}
 
-      {/* Side drawer menu */}
       <div
         className={
           nav
@@ -65,7 +55,7 @@ const Navbar = () => {
           className="absolute right-4 top-4 cursor-pointer"
         />
         <h2 className="text-2xl p-4">
-          Tasty <span className="font-bold">Food</span>
+          <strong>S</strong>TATION
         </h2>
         <nav>
           <ul className="flex flex-col p-4 text-gray-800">
@@ -85,7 +75,7 @@ const Navbar = () => {
               <AiFillTag size={25} className="mr-4" /> Promotions
             </li>
             <li className="text-xl py-4 flex border-b">
-              <BsFillSaveFill size={25} className="mr-4" /> Best Ones
+              <BsFillSaveFill size={25} className="mr-4" /> Top Rated
             </li>
             <li className="text-xl py-4 flex border-b">
               <FaUserFriends size={25} className="mr-4" /> Invite Friends
